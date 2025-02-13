@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
     <script
         src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.37/moment-timezone-with-data-1970-2030.min.js"></script>
@@ -22,7 +25,7 @@
         </h1> 
         -->
         <select name="" id="city">
-            <option value="">Select a city...</option>
+            <option value="disabled" disabled selected hidden>Select a city...</option>
             <option value="current">Current location📍</option>
             <option value="Europe/London">London</option>
             <option value="America/New_York">New York</option>
@@ -43,10 +46,18 @@
                 </div>
                 <div class="time">11:00:05 <small>AM</small></div>
             </div>
+            <div class="city" id="shanghai">
+                <div>
+                    <h2>Shanghai</h2>
+                    <div class="date">January 20th 2025</div>
+                </div>
+                <div class="time">11:00:05 <small>AM</small></div>
+            </div>
+
         </div>
     </div>
 
-    <footer>This project was coded by <strong>Aleida Aleña</strong>. <br> It is open sourced on
+    <footer>This project was coded by <a href="https://www.instagram.com/aleida.alena/" target="_blank">Aleida Aleña</a>. <br> It is open sourced on
         <a href="https://github.com/aaleida/world-clock" target="_blank">GitHub</a> and hosted on
         <a href="https://firstworldclock.netlify.app/" target="_blank">Netlify</a>
     </footer>
