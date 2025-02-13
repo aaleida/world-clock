@@ -31,9 +31,9 @@ function updateCity(event) {
   if (cityTimeZone === "current") {
     cityTimeZone = moment.tz.guess();
   }
-  let cityName = cityTimeZone.replace("_", " ").split("/")[1];
+  let cityName = cityTimeZone.replace("_", " ").split("/")[1]; //split creates an array, [1] is the second element of the array
   let cityTime = moment().tz(cityTimeZone);
-  let citiesElement = document.querySelector("#cities");
+  let citiesElement = document.querySelector(".cities");
   citiesElement.innerHTML = `
   <div class="city">
     <div>
@@ -50,5 +50,6 @@ function updateCity(event) {
 updateTime();
 setInterval(updateTime, 1000);
 
-let citiesSelectElement = document.querySelector("#city");
-citiesSelectElement.addEventListener("change", updateCity);
+
+let citiesSelectElement = document.querySelector("#city"); //target the id city
+citiesSelectElement.addEventListener("change", updateCity); //everytime someone selects a city, it will call the function updateCity
